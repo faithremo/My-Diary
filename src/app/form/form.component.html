@@ -1,24 +1,25 @@
 <div class="landingPage" style="background-image: url(../../assets/Motivation.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 700px; opacity: 0.8;">
     <h2 class="text-center">Qoutes Hub</h2>
-    <form class="container">
+
+    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="form-group" >
         <label for="quotes">Add a Quotes:</label>
-        <textarea class="form-control" id="quotes"  required rows="5"></textarea>
+        <textarea class="form-control" id="quotes" [(ngModel)]="newQuote.quotes" name="quotes" #quotes="ngModel"  required rows="5"></textarea>
    </div>
 
     <div class="form-group">
         <label for="name">Quote By:</label>
-        <input type="text" required class="form-control" id="name">
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
     </div>
 
     <div class="form-group">
         <label for="publisher">Publisher:</label>
-        <input type="text" required class="form-control" id="publisher">
+        <input type="text" class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel" required>
     </div>
 
     <div class="form-group">
         <label for="postdate">Date:</label>
-        <input type="date" required class="form-control" id="date"> <br><br>
+        <input type="date" required class="form-control" id="date" [(ngModel)]="newQuote.postdate" name="date" #date="ngModel" > <br><br>
     </div>
 
     <button type="submit" class="btn btn-success">Submit Quote</button>
