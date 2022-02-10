@@ -7,10 +7,9 @@
         </div>
 
         <div class="container-fluid d-flex" id="buttons">
-            <button class="btn btn-sm btn-primary "> <i class="fa fa-thumbs-up" id="like"></i>like</button>
-            <button class="btn btn-sm warning " id="hate"> <i class="fas fa-thumbs-down"
-                    id="dislike">Dislike</i></button>
-            <button class="btn btn-sm btn-danger ml-2" id="del"><i class="fa fa-trash" id="delete">Delete</i></button>
+            <button class= "btn btn-sm btn-primary " (click)='addLikes(quote.id)' >Like {{quote.like}}</button>
+            <button class="btn btn-sm btn-warning "  (click)='addDislikes(quote.id)'id="hate"> dislike {{quote.dislike}}</button>
+            <button class="btn btn-sm btn-danger ml-2" id="del" (click)='todeleQuote(quote.id)' >Delete</button>
         </div>
     </div>
 
