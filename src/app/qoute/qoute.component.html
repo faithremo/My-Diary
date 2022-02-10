@@ -1,4 +1,5 @@
+<app-form (addQuote)="uploadQuote($event)"></app-form>
 <div *ngFor='let quote of quotes'>
     {{quote.quotes}}, {{ quote.name }}, {{ quote.publisher }}, {{ quote.postdate}}
 
-</div>
+  </div>

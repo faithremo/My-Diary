@@ -22,7 +22,7 @@
         <input type="date" required class="form-control" id="date" [(ngModel)]="newQuote.postdate" name="date" #date="ngModel" > <br><br>
     </div>
 
-    <button type="submit" class="btn btn-success">Submit Quote</button>
+    <button [disabled] = '!quoteForm.valid' type="submit" class="btn btn-success w-23">Submit Quote</button>
 
     </form>
 

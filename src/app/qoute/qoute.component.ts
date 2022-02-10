@@ -11,6 +11,11 @@ export class QouteComponent implements OnInit {
 new Quotes ("No human is limited.","Eliud Kipchoge","Faith",new Date(2020,8,20)),
 new Quotes ("You are the world and the world is you.","Krishnamurati","Faith",new Date(2021,1,16))
   ]
+  uploadQuote(event: any) {
+  
+    event.completeDate = new Date(event.completeDate);
+    this.quotes.push(event);
+  }
 
   constructor() { }
 
