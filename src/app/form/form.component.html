@@ -1,7 +1,7 @@
 <div class="landingPage" style="background-image: url(../../assets/Motivation.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 700px; opacity: 0.8;">
     <h2 class="text-center">Qoutes Hub</h2>
 
-    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
+    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm" class="container">
     <div class="form-group" >
         <label for="quotes">Add a Quotes:</label>
         <textarea class="form-control" id="quotes" [(ngModel)]="newQuote.quotes" name="quotes" #quotes="ngModel"  required rows="5"></textarea>

@@ -1,5 +1,17 @@
 <app-form (addQuote)="uploadQuote($event)"></app-form>
-<div *ngFor='let quote of quotes'>
-    {{quote.quotes}}, {{ quote.name }}, {{ quote.publisher }}, {{ quote.postdate}}
+<div class="container" id="allcards" *ngFor='let quote of quotes'>
 
-  </div>
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            {{quote.quotes}}, {{ quote.name }}, {{ quote.publisher }}, {{ quote.postdate}}
+        </div>
+
+        <div class="container-fluid d-flex" id="buttons">
+            <button class="btn btn-sm btn-primary "> <i class="fa fa-thumbs-up" id="like"></i>like</button>
+            <button class="btn btn-sm warning " id="hate"> <i class="fas fa-thumbs-down"
+                    id="dislike">Dislike</i></button>
+            <button class="btn btn-sm btn-danger ml-2" id="del"><i class="fa fa-trash" id="delete">Delete</i></button>
+        </div>
+    </div>
+
+</div>

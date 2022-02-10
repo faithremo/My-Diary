@@ -1,0 +1,25 @@
+
+div{
+    padding-top: 10px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+    border: solid 1px rgb(200,159,142);
+    background-color: #fece90;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+button{
+    height: 35px;
+    margin-top: 60px;
+}
+
+#card{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
