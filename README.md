@@ -1,5 +1,21 @@
 # Quotes
 
+## Date
+10/2/2022
+
+## Description
+
+Quotes is an Angular Application that allows the users to view quotes and add their quotes. They can also delete, like or dislike a quote.
+
+## Technologies Used
+
+HTML,CSS,Angular and Bootstrap.
+
+## Known Bugs
+
+There are no bugs running the application.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
 ## Development server
@@ -25,3 +41,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Support and contact details
+email: faithmaumi@gmail.com 
+Copyright (c) 2021 Faith Nduta
