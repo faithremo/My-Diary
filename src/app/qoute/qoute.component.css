@@ -21,6 +21,7 @@ button{
 #card{
     display: table-cell;
     vertical-align: middle;
+    text-shadow: black;
     
 }
 
