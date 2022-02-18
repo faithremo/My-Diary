@@ -10,7 +10,7 @@ Quotes is an Angular Application that allows the users to view quotes and add th
 
 ## Technologies Used
 
-HTML,CSS,Angular and Bootstrap.
+HTML,CSS,Angular,JavaScript ,Bootstrap.
 
 ## Known Bugs
 
